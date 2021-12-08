@@ -33,7 +33,7 @@ const DataLayer = (props) => {
 
   const data = oneWeatherAPI();
   return (
-    <div>
+    <div className="tile is-ancestor">
       <TempCard
         day={moment.unix(data.daily[0].dt).format("ddd")}
         tempMax={data.daily[0].temp.max}
